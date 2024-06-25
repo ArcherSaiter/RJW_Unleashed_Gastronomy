@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+    <name>RJW_Unleashed_Gastronomy</name>
+    <author>ArcherSaiter, Kira_Bad_Artist</author>
+    <packageId>archersaiter.rjw.traits</packageId>
+    <modVersion>1.0</modVersion>
+    <url>https://gitgud.io/ArcherSaiter/rjw_unleashed_gastronomy</url>
+    <supportedVersions>
+        <li>1.5</li>
+    </supportedVersions>
+    <modDependencies>
+        <li>
+            <packageId>rim.job.world</packageId>
+            <displayName>RimJobWorld</displayName>
+            <downloadUrl>https://gitgud.io/Ed86/rjw</downloadUrl>
+        </li>
+    </modDependencies>
+    <loadAfter>
+        <li>Ludeon.RimWorld</li>
+        <li>Ludeon.RimWorld.Royalty</li>
+        <li>Ludeon.RimWorld.Ideology</li>
+        <li>Ludeon.RimWorld.Biotech</li>
+		<li>Ludeon.RimWorld.Anomaly</li>
+        <li>brrainz.harmony</li>
+        <li>rim.job.world</li>
+    </loadAfter>
+    <description>Meals &amp; desserts</description>
+</ModMetaData>
