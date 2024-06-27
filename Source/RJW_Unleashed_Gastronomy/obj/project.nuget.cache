@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "yPWQGdOiZzncrcmItd+1pFloNh4CDqOVy8RD5I2ognQSMI9MM++VOCulkHi/USsgHYs0qqcvxym8lpGpsXO2FQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Archer\\Desktop\\RJW_Unleashed_Gastronomy\\Source\\RJW_Unleashed_Gastronomy\\RJW_Unleashed_Gastronomy.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Archer\\.nuget\\packages\\krafs.publicizer\\2.2.1\\krafs.publicizer.2.2.1.nupkg.sha512"
+  ],
+  "logs": []
+}
