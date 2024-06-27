@@ -1,4 +1,0 @@
-C:\Users\Archer\Desktop\RJW_Unleashed_Gastronomy\Assemblies\RJW_Unleashed_Gastronomy.dll
-C:\Users\Archer\Desktop\RJW_Unleashed_Gastronomy\Source\RJW_Unleashed_Gastronomy\obj\Release\RJW_Unleashed_Gastronomy.csproj.AssemblyReference.cache
-C:\Users\Archer\Desktop\RJW_Unleashed_Gastronomy\Source\RJW_Unleashed_Gastronomy\obj\Release\RJW_Unleashed_Gastronomy.csproj.CoreCompileInputs.cache
-C:\Users\Archer\Desktop\RJW_Unleashed_Gastronomy\Source\RJW_Unleashed_Gastronomy\obj\Release\RJW_Unleashed_Gastronomy.dll
