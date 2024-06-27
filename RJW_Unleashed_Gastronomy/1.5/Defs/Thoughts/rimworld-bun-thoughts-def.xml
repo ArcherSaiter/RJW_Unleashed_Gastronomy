@@ -1,0 +1,27 @@
+<Defs>
+    <ThoughtDef>
+        <defName>AteMilkyStuffedRiceBun</defName>
+        <durationDays>0.5</durationDays>
+        <stackLimit>1</stackLimit>
+        <stages>
+            <li>
+                <label>ate milky stuffed rice bun</label>
+                <description>I ate a delicious milky stuffed rice bun. The sweet filling was a real treat!</description>
+                <baseMoodEffect>6</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+    <ThoughtDef>
+        <defName>AteRiceBun</defName>
+        <durationDays>0.5</durationDays>
+        <stackLimit>1</stackLimit>
+        <stages>
+            <li>
+                <label>ate rice bun</label>
+                <description>I ate a rice bun. It was simple but satisfying.</description>
+                <baseMoodEffect>3</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+</Defs>
