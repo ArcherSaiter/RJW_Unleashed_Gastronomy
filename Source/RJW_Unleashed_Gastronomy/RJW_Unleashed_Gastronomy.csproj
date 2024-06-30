@@ -24,7 +24,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="0Harmony">
-      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\workshop\content\294100\2009463077\1.4\Assemblies\0Harmony.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\workshop\content\294100\2009463077\1.4\Assemblies\0Harmony.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Assembly-CSharp, Version=1.5.8909.13066, Culture=neutral, processorArchitecture=MSIL">
@@ -33,7 +33,7 @@
       <Private>False</Private>
     </Reference>
     <Reference Include="RJW">
-      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\rjw\1.5\Assemblies\RJW.dll</HintPath>
+      <HintPath>..\..\..\rjw\1.5\Assemblies\RJW.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="System">
@@ -67,6 +67,11 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="HediffDefOf.cs" />
+    <Compile Include="IngredientDefOf.cs" />
+    <Compile Include="RJW_Gastronomy_Main.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

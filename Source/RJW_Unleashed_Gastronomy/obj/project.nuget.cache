@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "yPWQGdOiZzncrcmItd+1pFloNh4CDqOVy8RD5I2ognQSMI9MM++VOCulkHi/USsgHYs0qqcvxym8lpGpsXO2FQ==",
+  "dgSpecHash": "A5hCgPiIjilK+epXeTs6nC5q4/WZ9vClRQ4tEFnov5aYUORAeV9r6N/Ee1KyINTyuBpBKyBSNj6rKqasLiJqeg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Archer\\Desktop\\RJW_Unleashed_Gastronomy\\Source\\RJW_Unleashed_Gastronomy\\RJW_Unleashed_Gastronomy.csproj",
+  "projectFilePath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\RJW_Unleashed_Gastronomy\\Source\\RJW_Unleashed_Gastronomy\\RJW_Unleashed_Gastronomy.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Archer\\.nuget\\packages\\krafs.publicizer\\2.2.1\\krafs.publicizer.2.2.1.nupkg.sha512"
   ],
