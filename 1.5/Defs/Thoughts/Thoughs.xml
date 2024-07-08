@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThoughtDef>
+	<defName>thought</defName>
+	<label>Test dummy thought</label>
+	<labelNoun>Dummy thought</labelNoun>
+	<description>Dummy thought</description>
+	</ThoughtDef>
+</Defs>

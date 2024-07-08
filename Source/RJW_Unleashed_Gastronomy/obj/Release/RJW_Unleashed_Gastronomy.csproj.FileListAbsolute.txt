@@ -1,0 +1,9 @@
+C:\Users\Archer\Desktop\RJW_Unleashed_Gastronomy\Assemblies\RJW_Unleashed_Gastronomy.dll
+C:\Users\Archer\Desktop\RJW_Unleashed_Gastronomy\Source\RJW_Unleashed_Gastronomy\obj\Release\RJW_Unleashed_Gastronomy.csproj.AssemblyReference.cache
+C:\Users\Archer\Desktop\RJW_Unleashed_Gastronomy\Source\RJW_Unleashed_Gastronomy\obj\Release\RJW_Unleashed_Gastronomy.csproj.CoreCompileInputs.cache
+C:\Users\Archer\Desktop\RJW_Unleashed_Gastronomy\Source\RJW_Unleashed_Gastronomy\obj\Release\RJW_Unleashed_Gastronomy.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\RJW_Unleashed_Gastronomy\Source\RJW_Unleashed_Gastronomy\obj\Release\RJW_Unleashed_Gastronomy.csproj.AssemblyReference.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\RJW_Unleashed_Gastronomy\Source\RJW_Unleashed_Gastronomy\obj\Release\RJW_Unleashed_Gastronomy.csproj.CoreCompileInputs.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\RJW_Unleashed_Gastronomy\Source\RJW_Unleashed_Gastronomy\obj\Release\RJW_Unleashed_Gastronomy.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\RJW_Unleashed_Gastronomy\1.5\Assemblies\RJW_Unleashed_Gastronomy.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\RJW_Unleashed_Gastronomy\Source\RJW_Unleashed_Gastronomy\obj\Release\RJW_Unle.1D2E7983.Up2Date

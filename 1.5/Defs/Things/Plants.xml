@@ -1,0 +1,42 @@
+<Defs>
+	<ThingDef ParentName="PlantBase">
+	  <defName>Plant_SleepBerry</defName>
+	  <label>sleepberry bush</label>
+	  <description>A mysterious bush that yields peculiar berries known for their soporific effects. The berries can be cooked or eaten raw, but caution is advised.</description>
+	  <statBases>
+	    <MaxHitPoints>150</MaxHitPoints>
+	    <Nutrition>0.40</Nutrition>
+	  </statBases>
+	  <graphicData>
+	    <texPath>Things/Plant/BerryPlant</texPath>
+	    <graphicClass>Graphic_Random</graphicClass>
+	    <shadowData>
+	      <volume>(0.6, 0.2, 0.2)</volume>
+	      <offset>(0,0,-0.25)</offset>
+	    </shadowData>
+	  </graphicData>
+	  <selectable>true</selectable>
+	  <neverMultiSelect>false</neverMultiSelect>
+	  <fillPercent>0.25</fillPercent>
+	  <pathCost>35</pathCost>
+	  <plant>
+	    <fertilityMin>0.6</fertilityMin>
+	    <fertilitySensitivity>0.7</fertilitySensitivity>
+	    <growDays>8</growDays>
+	    <leaflessGraphicPath>Things/Plant/BerryPlant_Leafless</leaflessGraphicPath>
+	    <immatureGraphicPath>Things/Plant/BerryPlant_Immature</immatureGraphicPath>
+	    <harvestYield>8</harvestYield>
+	    <harvestWork>300</harvestWork>
+	    <harvestTag>Standard</harvestTag>
+	    <harvestAfterGrowth>0.35</harvestAfterGrowth>
+	    <harvestedThingDef>RawSleepBerries</harvestedThingDef>
+	    <wildClusterRadius>4</wildClusterRadius>
+	    <wildClusterWeight>200</wildClusterWeight>
+	    <visualSizeRange>0.9~1.6</visualSizeRange>
+	    <topWindExposure>0.25</topWindExposure>
+	    <wildOrder>3</wildOrder>
+	    <purpose>Food</purpose>
+	  </plant>
+	</ThingDef>
+	
+</Defs>
