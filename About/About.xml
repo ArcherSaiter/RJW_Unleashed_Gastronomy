@@ -1,19 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-    <name>RJW_Unleashed_Gastronomy</name>
-    <author>ArcherSaiter, Kira_Bad_Artist</author>
-    <packageId>rjw.unleashed.gastronomy</packageId>
-    <modVersion>1.0</modVersion>
-    <url>https://gitgud.io/ArcherSaiter/rjw_unleashed_gastronomy</url>
+    <name>RJW_Unleashed_Tribal</name>
+    <author>ArcherSaiter</author>
+    <packageId>archersaiter.rjw.races.tribal</packageId>
+    <modVersion>1.2.5</modVersion>
+    <url>https://github.com/ArcherSaiter/RJW_Races_Tribal</url>
     <supportedVersions>
         <li>1.5</li>
     </supportedVersions>
     <modDependencies>
-        <!--<li>
+        <li>
+            <packageId>Ludeon.RimWorld.Biotech</packageId>
+            <displayName>Biotech</displayName>
+        </li>
+        <li>
             <packageId>rim.job.world</packageId>
             <displayName>RimJobWorld</displayName>
             <downloadUrl>https://gitgud.io/Ed86/rjw</downloadUrl>
-        </li>-->
+        </li>
+		<li>
+            <packageId>Vegapnk.rjw.genes</packageId>
+            <displayName>RJW Genes</displayName>
+			<downloadUrl>https://github.com/vegapnk/RJW-Genes</downloadUrl>
+        </li>
     </modDependencies>
     <loadAfter>
         <li>Ludeon.RimWorld</li>
@@ -21,15 +30,11 @@
         <li>Ludeon.RimWorld.Ideology</li>
         <li>Ludeon.RimWorld.Biotech</li>
 		<li>Ludeon.RimWorld.Anomaly</li>
+        <li>brrainz.harmony</li>
+        <li>chris.cutercatearreplacer</li>
         <li>rim.job.world</li>
-		<li>rjw.sexpanded.core</li>
-		<li>rjw.sexpanded.reproduction</li>
-		<li>rjw.sexperience</li>
-		<li>archersaiter.rjw.traits</li>
+        <li>Vegapnk.rjw.genes</li>
+        <li>LustLicentia.RJWLabs</li>
     </loadAfter>
-    <description>Meals &amp; desserts.
-	Credits:
-	Archer_Saiter - Coding <!--C#, Xml-->&amp; ideas
-	Kira_Bad_Artist - Artwork &amp; ideas
-	DazDaz - Most of human milk stuff</description>
+    <description>RJW_Unleashed_Tribal - a mod featuring two tribes, civil and hostile, with thematic xenotypes: succubi and catgirls. Joined together, they might be your companions... or your enemies. And as latter, they are Deadly.</description>
 </ModMetaData>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Vanilla Psycasts Expanded</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+			<operations>
+                <!-- Psy -->
+				<!--<li Class="PatchOperationRemove">
+                    <xpath>Defs/PawnKindDef[@Name="RJW_Races_Tribal_Lesser_Succubus_Pawn"]/startingHediffs</xpath>
+                </li>
+				<li Class="PatchOperationRemove">
+                    <xpath>Defs/PawnKindDef[@Name="RJW_Races_Tribal_Higher_Succubus_Pawn"]/startingHediffs</xpath>
+                </li>-->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/PawnKindDef[@Name="RJW_Races_Tribal_Lesser_Succubus_Pawn"]</xpath>
+					<value>
+					<modExtensions>
+					<li Class="VanillaPsycastsExpanded.PawnKindAbilityExtension_Psycasts">
+					<implantDef>VPE_PsycastAbilityImplant</implantDef>
+					<initialLevel>1</initialLevel>
+					<statUpgradePoints>2~6</statUpgradePoints>
+					<unlockedPaths>
+						<VPE_Warlord>1~3|2~6</VPE_Warlord>
+					</unlockedPaths>
+					</li>
+					</modExtensions>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/PawnKindDef[@Name="RJW_Races_Tribal_Higher_Succubus_Pawn"]</xpath>
+					<value>
+					<modExtensions>
+					<li Class="VanillaPsycastsExpanded.PawnKindAbilityExtension_Psycasts">
+					<implantDef>VPE_PsycastAbilityImplant</implantDef>
+					<initialLevel>3</initialLevel>
+					<statUpgradePoints>2~6</statUpgradePoints>
+					<unlockedPaths>
+						<VPE_Warlord>1~3|2~6</VPE_Warlord>
+					</unlockedPaths>
+					</li>
+					</modExtensions>
+					</value>
+				</li>
+            </operations>
+        </match>
+    </Operation>
+	<Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Alpha Genes</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+			<operations>
+                <!-- Add psylink gene -->
+				<li Class="PatchOperationAdd">
+                    <xpath>Defs/XenotypeDef[defName="RJW_Races_Tribal_Lesser_Succubus"]/genes</xpath>
+                    <value>
+                        <li MayRequire="sarg.alphagenes">AG_InnatePsylink</li>
+                    </value>
+                </li>
+				<li Class="PatchOperationAdd">
+                    <xpath>Defs/XenotypeDef[defName="RJW_Races_Tribal_Higher_Succubus"]/genes</xpath>
+                    <value>
+                        <li MayRequire="sarg.alphagenes">AG_InnatePsylink</li>
+                    </value>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+</Patch>
