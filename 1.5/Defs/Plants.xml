@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="PlantBase">
+		<defName>Plant_Aphrodisiac</defName>
+		<label>aphrodisiac tree</label>
+		<description>A short, rare tree that produces small, fragrant fruits. While all effects of these fruits are yet to be explored, it is known that thay are juicy, nutricious and when consumed, they stimulate creatures in a way that makes them way more sexually active than usual.\n\nThe tree itself is rough, as well as its leaves, which makes them hard to work with, however, robust structure also allows it to survive in most environments. As it can grow even on rocks with barely any light, there are legends of cave dwellers surviving just on aphrodisiac fruits, but the same legends also mention some sort of &lt;color=#E5E54C&gt;price&lt;/color&gt;. Thus, some cultures consider it sacred, while others see it as a dangerous temptation.\n\n Aphrodisiac trees tend to live long, extracting most of nutrients out of the soil, which makes them efficient in most conditions despite being hard to work with. Among other properties, they also have a unique charm, which makes them pleasing to look at and comfortable to rest beside if used as decorative room plant.</description>
+		<statBases>
+			<MaxHitPoints>450</MaxHitPoints>
+			<Nutrition>0.25</Nutrition>
+			<Beauty>10</Beauty>
+			<BeautyOutdoors>5</BeautyOutdoors>
+			<MeditationFocusStrength>1.0</MeditationFocusStrength>
+		</statBases>
+		<graphicData>
+			<texPath>Plants/AphrodisiacTreeHarvestable</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shadowData>
+				<volume>(0.6, 0.2, 0.2)</volume>
+				<offset>(0,0,-0.25)</offset>
+			</shadowData>
+		</graphicData>
+		<selectable>true</selectable>
+		<neverMultiSelect>false</neverMultiSelect>
+		<pathCost>35</pathCost>
+		<ingestible />
+		<plant Inherit="False">
+			<soundHarvesting>Harvest_Standard</soundHarvesting>
+			<soundHarvestFinish>Harvest_Standard_Finish</soundHarvestFinish>
+			<fertilityMin>0.0</fertilityMin>
+			<fertilitySensitivity>0.75</fertilitySensitivity>
+			<leaflessGraphicPath>Plants/AphrodisiacTree</leaflessGraphicPath>
+			<immatureGraphicPath>Plants/AphrodisiacTree</immatureGraphicPath>
+			<growDays>5</growDays>
+			<harvestYield>5</harvestYield>
+			<harvestWork>750</harvestWork>
+			<sowWork>1000</sowWork>
+			<sowTags>
+				<li>Ground</li>
+				<li>Hydroponic</li>
+				<li>Decorative</li>
+			</sowTags>
+			<sowResearchPrerequisites>
+				<li>AphrodisiacTreeCultivation</li>
+			</sowResearchPrerequisites>
+			<harvestAfterGrowth>0.20</harvestAfterGrowth>
+			<harvestTag>Standard</harvestTag>
+			<harvestedThingDef>AphrodisiacFruit</harvestedThingDef>
+			<cavePlantWeight>0</cavePlantWeight>
+			<wildClusterRadius>2</wildClusterRadius>
+			<wildClusterWeight>25</wildClusterWeight>
+			<visualSizeRange>0.7~1.2</visualSizeRange>
+			<topWindExposure>0.25</topWindExposure>
+			<purpose>Food</purpose>
+			<treeLoversCareIfChopped>false</treeLoversCareIfChopped>
+			<sowMinSkill>8</sowMinSkill>
+			<neverBlightable>true</neverBlightable>
+			<growMinGlow>0.5</growMinGlow>
+			<growOptimalGlow>1.0</growOptimalGlow>
+			<wildOrder>1</wildOrder>
+			<wildEqualLocalDistribution>false</wildEqualLocalDistribution>
+			<dieIfLeafless>false</dieIfLeafless>
+			<canDeteriorate>false</canDeteriorate>
+			<lifespanDaysPerGrowDays>0.5</lifespanDaysPerGrowDays>
+		</plant>
+		<comps>
+		<li Class="CompProperties_Facility">
+			<statOffsets>
+				<Comfort>0.05</Comfort>
+			</statOffsets>
+			<mustBePlacedAdjacent>true</mustBePlacedAdjacent>
+			<maxSimultaneous>1</maxSimultaneous>
+			<maxDistance>3</maxDistance>
+		</li>
+		<li Class="CompProperties_MeditationFocus">
+			<statDef>MeditationFocusStrength</statDef>
+			<focusTypes>
+				<li>Sex</li>
+			</focusTypes>
+		</li>
+		</comps>
+	</ThingDef>
+</Defs>

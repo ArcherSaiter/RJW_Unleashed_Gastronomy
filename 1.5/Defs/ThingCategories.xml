@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingCategoryDef>
+		<defName>RJW_Gastronomy_Root</defName>
+		<label>erotic foods</label>
+		<parent>Foods</parent>
+		<resourceReadoutRoot>true</resourceReadoutRoot>
+		<iconPath>UI/Icons/ThingCategories/Foods</iconPath>
+	</ThingCategoryDef>
+
+    <ThingCategoryDef>
+		<defName>RJW_Gastronomy_Meals</defName>
+		<label>erotic meals</label>
+		<parent>RJW_Gastronomy_Root</parent>
+		<iconPath>UI/Icons/ThingCategories/FoodMeals</iconPath>
+    </ThingCategoryDef>
+
+    <ThingCategoryDef>
+		<defName>RJW_Gastronomy_FoodRaw</defName>
+		<label>raw erotic food</label>
+		<parent>RJW_Gastronomy_Root</parent>
+		<iconPath>UI/Icons/ThingCategories/FoodRaw</iconPath>
+    </ThingCategoryDef> 
+	
+	<ThingCategoryDef MayRequire="rjw.sexperience">
+		<defName>SexperienceCum</defName>
+		<label>cum</label>
+		<parent>RJW_Gastronomy_FoodRaw</parent>
+		<iconPath>UI/Icons/ThingCategories/FoodRaw</iconPath>
+    </ThingCategoryDef> 
+	
+</Defs>

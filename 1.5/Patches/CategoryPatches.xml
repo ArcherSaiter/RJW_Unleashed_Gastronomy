@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+<Operation Class="PatchOperationFindMod">
+    <mods>
+        <li>RimJobWorld</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="HumpShroom"]/thingCategories</xpath>
+                <value>
+                    <li>RJW_Gastronomy_FoodRaw</li>
+                </value>
+            </li>
+        </operations>
+    </match>
+</Operation>
+
+<Operation Class="PatchOperationFindMod">
+    <mods>
+        <li>RJW Sexperience</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="GatheredCum"]/thingCategories</xpath>
+                <value>
+                    <li>RJW_Gastronomy_FoodRaw</li>
+					<li>SexperienceCum</li>
+                </value>
+            </li>
+        </operations>
+    </match>
+</Operation>
+
+<Operation Class="PatchOperationFindMod">
+    <mods>
+        <li>RimJobWorld - Milkable Colonists</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="HumanMilk"]/thingCategories</xpath>
+                <value>
+                    <li>RJW_Gastronomy_FoodRaw</li>
+                </value>
+            </li>
+			<li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="HumanMilkBulk"]/thingCategories</xpath>
+                <value>
+                    <li>RJW_Gastronomy_FoodRaw</li>
+                </value>
+            </li>
+			<li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="HumanoidMilk"]/thingCategories</xpath>
+                <value>
+                    <li>RJW_Gastronomy_FoodRaw</li>
+                </value>
+            </li>
+			<li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="HumanoidMilkBulk"]/thingCategories</xpath>
+                <value>
+                    <li>RJW_Gastronomy_FoodRaw</li>
+                </value>
+            </li>
+        </operations>
+    </match>
+</Operation>
+
+<Operation Class="PatchOperationFindMod">
+    <mods>
+        <li>RJW Sexpanded Core</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="RJWReProduce_RawCocktus"]</xpath>
+                <value>
+                    <thingCategories>
+						<li>RJW_Gastronomy_FoodRaw</li>
+					</thingCategories>
+                </value>
+            </li>
+			<li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="RJWReProduce_RawUdderfruit"]/thingCategories</xpath>
+                <value>
+					<li>RJW_Gastronomy_FoodRaw</li>
+                </value>
+            </li>
+			<li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="RJWReProduce_RawToxicle"]</xpath>
+                <value>
+                    <thingCategories>
+						<li>RJW_Gastronomy_FoodRaw</li>
+					</thingCategories>
+                </value>
+            </li>
+			<li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="RJWReProduce_RawFrigina"]</xpath>
+                <value>
+                    <thingCategories>
+						<li>RJW_Gastronomy_FoodRaw</li>
+					</thingCategories>
+                </value>
+            </li>
+        </operations>
+    </match>
+</Operation>
+
+<Operation Class="PatchOperationFindMod">
+    <mods>
+        <li>S16's Extension</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="S16GirlCum"]/thingCategories</xpath>
+                <value>
+                    <li>RJW_Gastronomy_FoodRaw</li>
+                </value>
+            </li>
+			<li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="S16LoveCookie"]/thingCategories</xpath>
+                <value>
+                    <li>RJW_Gastronomy_Meals</li>
+                </value>
+            </li>
+			<li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="S16LoveNectar"]/thingCategories</xpath>
+                <value>
+                    <li>RJW_Gastronomy_Meals</li>
+                </value>
+            </li>
+        </operations>
+    </match>
+</Operation>
+
+</Patch>

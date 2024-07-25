@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<ThoughtDef>
+		<defName>AphrodisiacFruitWithdrawal</defName>
+		<workerClass>ThoughtWorker_Hediff</workerClass>
+		<hediff>AphrodisiacFruitAddiction</hediff>
+		<validWhileDespawned>true</validWhileDespawned>
+		<stages>
+			<li><visible>false</visible></li>
+			<li>
+				<label>aphrodisiac fruit withdrawal</label>
+				<description>I feel restless, pained, hungry and frustrated. My body craves the stimulation of the strange fruit.</description>
+				<baseMoodEffect>-15</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	
+	<ThoughtDef>
+	<defName>AphrodisiacFruitThought</defName>
+	<workerClass>ThoughtWorker_Hediff</workerClass>
+	<hediff>AphrodisiacFruitEffect</hediff>
+	<validWhileDespawned>true</validWhileDespawned>
+	<stages>
+		<li>
+		<label>Mild warmth</label>
+		<description>I feel a pleasant warmth spreading through my body. Everything seems a bit more... interesting.</description>
+		<baseMoodEffect>3</baseMoodEffect>
+		</li>
+		<li>
+		<label>Obfuscated mind</label>
+		<description>My thoughts are getting hazy, but in an oddly pleasant way. I can't stop thinking about... certain things.</description>
+		<baseMoodEffect>6</baseMoodEffect>
+		</li>
+		<li>
+		<label>Lack of control</label>
+		<description>I'm finding it hard to focus on anything but my desires. I feel like I'm on fire!</description>
+		<baseMoodEffect>9</baseMoodEffect>
+		</li>
+		<li>
+		<label>Obsession</label>
+		<description>I can't think straight anymore, desires are overwhelming! I HAVE to satisfy!</description>
+		<baseMoodEffect>12</baseMoodEffect>
+		</li>
+		<li>
+		<label>Craze</label>
+		<description>It is flooding my mind, the urge to obey the will of the fruit. MUST... Do... It...</description>
+		<baseMoodEffect>15</baseMoodEffect>
+		</li>
+		<li>
+		<label>Insanity</label>
+		<description>It consumes me, overtakes me... The chaotic whirlpool of desire, drowning everything in uncontrollable lust...</description>
+		<baseMoodEffect>18</baseMoodEffect>
+		</li>
+		<li>
+		<label>Brainfuck</label>
+		<description>WANT! NEED! NOW!</description>
+		<baseMoodEffect>21</baseMoodEffect>
+		</li>
+	</stages>
+	</ThoughtDef>
+	
+</Defs>

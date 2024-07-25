@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ResearchProjectDef>
+    <defName>AphrodisiacTreeCultivation</defName>
+    <label>Aphrodisiac tree cultivation</label>
+    <description>Learn to cultivate the rare and valuable aphrodisiac tree, unlocking its potential for both sustenance and unique stimulating properties.</description>
+    <baseCost>400</baseCost>
+    <techLevel>Neolithic</techLevel>
+    <!--<prerequisites>
+      <li>TreeSowing</li>
+    </prerequisites>-->
+    <researchViewX>2.00</researchViewX>
+    <researchViewY>0.00</researchViewY>
+  </ResearchProjectDef>
+
+</Defs>
