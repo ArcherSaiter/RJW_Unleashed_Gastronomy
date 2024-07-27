@@ -123,6 +123,9 @@
             <hediffDef>rjw_genes_fertilin_lost</hediffDef>
             <severity>0.35</severity>
             </li>
+			<li MayRequire="vegapnk.rjw.genes" Class="RJW_Genes.IngestionOutcomeDoer_LifeForceOffset">
+				<FertilinPerUnit>20</FertilinPerUnit>
+			</li>
 			<li Class="RJW_Unleashed_Gastronomy.RJW_Unleashed_GastronomyIngestionOutcomeDoer"></li>
 		</outcomeDoers>
 	</ingestible>
