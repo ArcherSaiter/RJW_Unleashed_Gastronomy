@@ -54,13 +54,13 @@
 			<treeLoversCareIfChopped>false</treeLoversCareIfChopped>
 			<sowMinSkill>8</sowMinSkill>
 			<neverBlightable>true</neverBlightable>
-			<growMinGlow>0.5</growMinGlow>
+			<growMinGlow>0.25</growMinGlow>
 			<growOptimalGlow>1.0</growOptimalGlow>
 			<wildOrder>1</wildOrder>
 			<wildEqualLocalDistribution>false</wildEqualLocalDistribution>
 			<dieIfLeafless>false</dieIfLeafless>
 			<canDeteriorate>false</canDeteriorate>
-			<lifespanDaysPerGrowDays>0.5</lifespanDaysPerGrowDays>
+			<lifespanDaysPerGrowDays>60</lifespanDaysPerGrowDays>
 		</plant>
 		<comps>
 		<li Class="CompProperties_Facility">
@@ -69,7 +69,7 @@
 			</statOffsets>
 			<mustBePlacedAdjacent>true</mustBePlacedAdjacent>
 			<maxSimultaneous>1</maxSimultaneous>
-			<maxDistance>3</maxDistance>
+			<maxDistance>5</maxDistance>
 		</li>
 		<li Class="CompProperties_MeditationFocus">
 			<statDef>MeditationFocusStrength</statDef>
