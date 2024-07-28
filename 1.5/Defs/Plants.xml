@@ -30,8 +30,8 @@
 			<fertilitySensitivity>0.75</fertilitySensitivity>
 			<leaflessGraphicPath>Plants/AphrodisiacTree</leaflessGraphicPath>
 			<immatureGraphicPath>Plants/AphrodisiacTree</immatureGraphicPath>
-			<growDays>5</growDays>
-			<harvestYield>5</harvestYield>
+			<growDays>6</growDays>
+			<harvestYield>2</harvestYield>
 			<harvestWork>750</harvestWork>
 			<sowWork>1000</sowWork>
 			<sowTags>
