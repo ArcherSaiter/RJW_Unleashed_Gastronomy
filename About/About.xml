@@ -3,7 +3,7 @@
     <name>RJW_Unleashed_Gastronomy</name>
     <author>ArcherSaiter</author>
     <packageId>rjw.unleashed.gastronomy</packageId>
-    <modVersion>0.73</modVersion>
+    <!--<modVersion>0.73</modVersion>-->
     <url>https://gitgud.io/ArcherSaiter/rjw_unleashed_gastronomy</url>
     <supportedVersions>
         <li>1.5</li>
@@ -31,7 +31,7 @@
     </loadAfter>
     <description>Meals &amp; desserts.
 	Credits:
-	Archer_Saiter - Coding <!--C#, Xml-->&amp; ideas
+	Archer_Saiter - Coding in C# and Xml, ideas
 	Kira_Bad_Artist - Artwork &amp; ideas
-	<!--DazDaz - Most of humilk related code and artwork--></description>
+	</description><!--DazDaz - Most of humilk related code and artwork-->
 </ModMetaData>
