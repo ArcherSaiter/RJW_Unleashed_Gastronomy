@@ -26,7 +26,7 @@
 			<li Class="PatchOperationAdd">
                 <xpath>Defs/ThingDef[defName="GatheredCum"]/thingCategories</xpath>
                 <value>
-                    <li>RJW_Gastronomy_FoodRaw</li>
+                    <!--<li>RJW_Gastronomy_FoodRaw</li>-->
 					<li>SexperienceCum</li>
                 </value>
             </li>
@@ -43,25 +43,25 @@
 			<li Class="PatchOperationAdd">
                 <xpath>Defs/ThingDef[defName="HumanMilk"]/thingCategories</xpath>
                 <value>
-                    <li>RJW_Gastronomy_FoodRaw</li>
+					<li>RJW_Gastronomy_Humilk</li>
                 </value>
             </li>
 			<li Class="PatchOperationAdd">
                 <xpath>Defs/ThingDef[defName="HumanMilkBulk"]/thingCategories</xpath>
                 <value>
-                    <li>RJW_Gastronomy_FoodRaw</li>
+					<li>RJW_Gastronomy_Humilk</li>
                 </value>
             </li>
 			<li Class="PatchOperationAdd">
                 <xpath>Defs/ThingDef[defName="HumanoidMilk"]/thingCategories</xpath>
                 <value>
-                    <li>RJW_Gastronomy_FoodRaw</li>
+					<li>RJW_Gastronomy_Humilk</li>
                 </value>
             </li>
 			<li Class="PatchOperationAdd">
                 <xpath>Defs/ThingDef[defName="HumanoidMilkBulk"]/thingCategories</xpath>
                 <value>
-                    <li>RJW_Gastronomy_FoodRaw</li>
+					<li>RJW_Gastronomy_Humilk</li>
                 </value>
             </li>
         </operations>
