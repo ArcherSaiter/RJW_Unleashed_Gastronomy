@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	
+	<!-- ==================== Powdered HuMilk ==================== -->
+	
+	<RecipeDef MayRequire="rjw.milk.humanoid" Name="RJW_Gastronomy_Humilk_Powdered_Base" ParentName="RJW_Gastronomy_Humilk_Base" Abstract="True">
+		<description>Powderize human milk for preservation and storage by dehydration.</description>
+		<jobString>Powderizing human milk.</jobString>
+		<fixedIngredientFilter>
+			<categories>
+				<li>RJW_Gastronomy_Humilk</li>
+			</categories>
+			<disallowedThingDefs>
+				<li>RJW_Gastronomy_Humilk_Powdered</li>
+			</disallowedThingDefs>
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>
+			<categories>
+				<li>RJW_Gastronomy_Humilk</li>
+			</categories>
+			<disallowedThingDefs>
+				<li>RJW_Gastronomy_Humilk_Condensed</li>
+			</disallowedThingDefs>
+		</defaultIngredientFilter>
+	</RecipeDef>
+
+	<RecipeDef MayRequire="rjw.milk.humanoid" ParentName="RJW_Gastronomy_Humilk_Powdered_Base">
+		<defName>Cook_Powdered_Humilk</defName>
+		<label>make human milk powder x10</label>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>RJW_Gastronomy_Humilk</li>
+					</categories>
+				</filter>
+				<count>0.5</count>
+			</li>
+		</ingredients>
+		<workAmount>35</workAmount>
+		<products>
+			<RJW_Gastronomy_Humilk_Powdered>10</RJW_Gastronomy_Humilk_Powdered>
+		</products>
+	</RecipeDef>
+	
+	<RecipeDef MayRequire="rjw.milk.humanoid" ParentName="RJW_Gastronomy_Humilk_Powdered_Base">
+		<defName>Cook_Powdered_Humilk_Bulk</defName>
+		<label>make human milk powder x100</label>
+		<ingredients>
+		<li>
+			<filter>
+			<categories>
+				<li>RJW_Gastronomy_Humilk</li>
+			</categories>
+			</filter>
+			<count>5.0</count>
+		</li>
+		</ingredients>
+		<workAmount>175</workAmount>
+		<products>
+		<RJW_Gastronomy_Humilk_Powdered>100</RJW_Gastronomy_Humilk_Powdered>
+		</products>
+	</RecipeDef>
+	
+	<!-- ==================== Rehydrate Powdered HuMilk ==================== -->
+	
+	<RecipeDef MayRequire="rjw.milk.humanoid" Name="RJW_Gastronomy_Humilk_Powder_Rehydration" ParentName="RJW_Gastronomy_Base_RecipePruned" Abstract="True">
+		<!-- VCE custom ingredientValueGetterClass -->
+		<!-- If non ingestable or condiment, use flat amount -->
+		<!--<ingredientValueGetterClass MayRequire="vanillaexpanded.vcooke">VanillaCookingExpanded.IngredientValueGetter_NutritionWithExtraIngredient</ingredientValueGetterClass>-->
+		<description>Rehydrate powdered human milk for ease of consumption.</description>
+		<jobString>Rehydrating powdered human milk.</jobString>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RJW_Gastronomy_Humilk_Powdered</li>
+				<li MayRequire="dubwise.dubsbadhygiene">DBH_WaterBottle</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>
+			<thingDefs>
+				<li>RJW_Gastronomy_Humilk_Powdered</li>
+				<li MayRequire="dubwise.dubsbadhygiene">DBH_WaterBottle</li>
+			</thingDefs>
+		</defaultIngredientFilter>
+	</RecipeDef>
+	
+	<RecipeDef MayRequire="rjw.milk.humanoid" ParentName="RJW_Gastronomy_Humilk_Powder_Rehydration">
+		<defName>Humilk_Powder_Rehydration</defName>
+		<label>rehydrate powdered human milk x10</label>
+		<ingredients>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>RJW_Gastronomy_Humilk_Powdered</li>
+				</thingDefs>
+			</filter>
+			<count>0.5</count>
+		</li>
+		<li MayRequire="dubwise.dubsbadhygiene">
+			<filter>
+				<thingDefs>
+					<li>DBH_WaterBottle</li>
+				</thingDefs>
+			</filter>
+			<count>1</count>
+		</li>
+		</ingredients>
+		<workAmount>5</workAmount>
+		<products>
+			<HumanMilk>10</HumanMilk>
+		</products>
+	</RecipeDef>
+	
+	<RecipeDef MayRequire="rjw.milk.humanoid" ParentName="RJW_Gastronomy_Humilk_Powder_Rehydration">
+		<defName>Humilk_Powder_Rehydration_Bulk</defName>
+		<label>rehydrate powdered human milk x100</label>
+		<ingredients>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>RJW_Gastronomy_Humilk_Powdered</li>
+				</thingDefs>
+			</filter>
+			<count>5.0</count>
+		</li>
+		<li MayRequire="dubwise.dubsbadhygiene">
+			<filter>
+				<thingDefs>
+					<li>DBH_WaterBottle</li>
+				</thingDefs>
+			</filter>
+			<count>10</count>
+		</li>
+		</ingredients>
+		<workAmount>50</workAmount>
+		<products>
+			<HumanMilk>100</HumanMilk>
+		</products>
+	</RecipeDef>
+
+	<!-- ==================== Condensed HuMilk ==================== -->
+	
+	<RecipeDef MayRequire="rjw.milk.humanoid" Name="RJW_Gastronomy_Humilk_CondensedBase" ParentName="RJW_Gastronomy_Humilk_Base" Abstract="True">
+		<!-- VCE custom ingredientValueGetterClass, If non ingestable or condiment, use flat amount -->
+		<!--<ingredientValueGetterClass MayRequire="vanillaexpanded.vcooke">VanillaCookingExpanded.IngredientValueGetter_NutritionWithExtraIngredient</ingredientValueGetterClass>-->
+		<description>Make sweet condensed human milk by reducing water and adding sugar.</description>
+		<jobString>Condensing human milk.</jobString>
+		<fixedIngredientFilter>
+			<categories>
+				<li>RJW_Gastronomy_Humilk</li>
+			</categories>
+			<thingDefs>
+			<!-- Vanilla Cooking Expanded -->
+			<li MayRequire="vanillaexpanded.vcooke">VCE_RawSugar</li>
+			<!-- VGP Garden Gourmet Milling -->
+			<li MayRequire="dismarzero.VGP.VGPGardenGourmetMilling">Rawsugarcane</li>
+			<!-- RimCuisine 2 Core (Continued) -->
+			<li MayRequire="Mlie.RC2.Core">RC2_Sugar</li>
+			</thingDefs>
+			<disallowedThingDefs>
+				<li>RJW_Gastronomy_Humilk_Condensed</li>
+			</disallowedThingDefs>
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>
+			<categories>
+				<li>RJW_Gastronomy_Humilk</li>
+			</categories>
+			<thingDefs>
+			<!-- Vanilla Cooking Expanded -->
+			<li MayRequire="vanillaexpanded.vcooke">VCE_RawSugar</li>
+			<!-- VGP Garden Gourmet Milling -->
+			<li MayRequire="dismarzero.VGP.VGPGardenGourmetMilling">Rawsugarcane</li>
+			<!-- RimCuisine 2 Core (Continued) -->
+			<li MayRequire="Mlie.RC2.Core">RC2_Sugar</li>
+			</thingDefs>
+			<disallowedThingDefs>
+				<li>RJW_Gastronomy_Humilk_Condensed</li>
+			</disallowedThingDefs>
+		</defaultIngredientFilter>
+		<skillRequirements>
+			<Cooking>6</Cooking>
+		</skillRequirements>
+	</RecipeDef>
+
+	<RecipeDef MayRequire="rjw.milk.humanoid" ParentName="RJW_Gastronomy_Humilk_CondensedBase">
+		<defName>RJW_Gastronomy_Humilk_CondensedSingle</defName>
+		<label>make condensed human milk x10</label>
+		<ingredients>
+			<li>
+			<filter>
+				<categories>
+					<li>RJW_Gastronomy_Humilk</li>
+				</categories>
+				<disallowedThingDefs>
+				<li>RJW_Gastronomy_Humilk_Condensed</li>
+			</disallowedThingDefs>
+			</filter>
+			<count>0.5</count>
+			</li>
+			<li MayRequire="vanillaexpanded.vcooke">
+			<filter>
+				<thingDefs>
+				<!-- Vanilla Cooking Expanded -->
+				<li>VCE_RawSugar</li>
+				<!-- VGP Garden Gourmet Milling -->
+				<li MayRequire="dismarzero.VGP.VGPGardenGourmetMilling">Rawsugarcane</li>
+				<!-- RimCuisine 2 Core (Continued) -->
+				<li MayRequire="Mlie.RC2.Core">RC2_Sugar</li>
+				</thingDefs>
+			</filter>
+			<count>1</count>
+			</li>
+		</ingredients>
+		<workAmount>50</workAmount>
+		<products>
+			<RJW_Gastronomy_Humilk_Condensed>1</RJW_Gastronomy_Humilk_Condensed>
+		</products>
+	</RecipeDef>
+  
+	<RecipeDef MayRequire="rjw.milk.humanoid" ParentName="RJW_Gastronomy_Humilk_CondensedBase">
+		<defName>RJW_Gastronomy_Humilk_CondensedBulk</defName>
+		<label>condense human milk x100</label>
+		<ingredients>
+			<li>
+			<filter>
+				<categories>
+					<li>RJW_Gastronomy_Humilk</li>
+				</categories>
+				<disallowedThingDefs>
+				<li>RJW_Gastronomy_Humilk_Condensed</li>
+			</disallowedThingDefs>
+			</filter>
+			<count>5.0</count>
+			</li>
+			<li MayRequire="vanillaexpanded.vcooke">
+			<filter>
+				<thingDefs>
+				<!-- Vanilla Cooking Expanded -->
+				<li>VCE_RawSugar</li>
+				<!-- VGP Garden Gourmet Milling -->
+				<li MayRequire="dismarzero.VGP.VGPGardenGourmetMilling">Rawsugarcane</li>
+				<!-- RimCuisine 2 Core (Continued) -->
+				<li MayRequire="Mlie.RC2.Core">RC2_Sugar</li>
+				</thingDefs>
+			</filter>
+			<count>10</count>
+			</li>
+		</ingredients>
+		<workAmount>250</workAmount>
+		<products>
+			<RJW_Gastronomy_Humilk_Condensed>10</RJW_Gastronomy_Humilk_Condensed>
+		</products>
+	</RecipeDef>
+
+</Defs>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<ThingDef ParentName="DrugBase" Name="RJW_Gastronomy_Transformative_Base" Abstract="True">
+		<comps>
+			<li Class="CompProperties_Ingredients">
+			<splitTransferableFoodKind>true</splitTransferableFoodKind>
+			</li>
+			<li Class="CompProperties_Rottable">
+			<daysToRotStart>4</daysToRotStart>
+			<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+		<recipeMaker>
+			<workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+			<workSkill>Intellectual</workSkill>
+			<effectWorking>Cook</effectWorking>
+			<soundWorking>Recipe_CookMeal</soundWorking>
+			<bulkRecipeCount>4</bulkRecipeCount>
+			<researchPrerequisite>TransformativeFood</researchPrerequisite>
+			<recipeUsers>
+				<li>DrugLab</li>
+			</recipeUsers>
+			<skillRequirements>
+				<Intellectual>2</Intellectual>
+			</skillRequirements>
+			<displayPriority>1500</displayPriority>
+		</recipeMaker>
+		<tickerType>Rare</tickerType>
+	</ThingDef>
+	
+	<ThingDef ParentName="RJW_Gastronomy_Transformative_Base" MayRequire="archersaiter.rjw.traits">
+		<defName>RJW_Gastronomy_Bimbo_Icecream</defName>
+		<label>Bimbo icecream</label>
+		<description>An icecream, carefully made from potent ingredients, infused with thoroughly chosen substances, all to achieve transformative properties that are capable of making people bimbos.</description>
+		<graphicData>
+			<texPath>Items/BimboIcecreamSingle</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<thingCategories>
+			<li>RJW_Gastronomy_Transformative</li>
+		</thingCategories>
+		<statBases>
+			<MarketValue>20</MarketValue>
+			<WorkToMake>300</WorkToMake>
+			<Nutrition>0.3</Nutrition>
+			<Mass>0.2</Mass>
+			<FoodPoisonChanceFixedHuman>0</FoodPoisonChanceFixedHuman>
+		</statBases>
+		<techLevel>Industrial</techLevel>
+		<ingestible>
+			<baseIngestTicks>100</baseIngestTicks>
+			<chairSearchRadius>5</chairSearchRadius>
+			<tasteThought></tasteThought>
+			<foodType>Processed</foodType>
+			<joy>0.25</joy>
+			<joyKind>Chemical</joyKind>
+			<preferability>NeverForNutrition</preferability>
+			<ingestEffect>EatVegetarian</ingestEffect>
+			<ingestSound>Meal_Eat</ingestSound>
+			<nurseable>true</nurseable>
+			<maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+			<defaultNumToIngestAtOnce>1</defaultNumToIngestAtOnce>
+			<optimalityOffsetHumanlikes>-20</optimalityOffsetHumanlikes>
+			<optimalityOffsetFeedingAnimals>-99</optimalityOffsetFeedingAnimals>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_OffsetNeed">
+					<need>Sex</need>
+					<offset>-0.25</offset>
+				</li>
+				<li Class="IngestionOutcomeDoer_OffsetNeed">
+					<need>DrugDesire</need>
+					<offset>0.25</offset>
+				</li>
+				<li Class="RJW_Unleashed_Gastronomy.RJW_Unleashed_GastronomyIngestionOutcomeDoer"></li>
+			</outcomeDoers>
+		</ingestible>
+		<modExtensions>
+			<li Class="RJW_Unleashed_Gastronomy.GastronomyExtension">
+				<hediffDef  MayRequire="vegapnk.rjw.genes">RJW_Unleashed_Bimbofication</hediffDef>
+				<severityModifier>0.25</severityModifier>
+				<thoughtDef></thoughtDef>
+				<durationDays>0</durationDays>
+				<triggerProbability>1.0</triggerProbability>
+				<traitDef>RJW_Traits_Bimbo</traitDef>
+				<traitGiverProbability>0.25</traitGiverProbability>
+				<transformationGene  MayRequire="vegapnk.rjw.genes">RJW_Unleashed_Bimbofier</transformationGene>
+				<applicableForFemales MayRequire="vegapnk.rjw.genes">true</applicableForFemales>
+				<applicableForMales MayRequire="vegapnk.rjw.genes">true</applicableForMales>
+			</li>
+		</modExtensions>
+		<costList>
+			<AphrodisiacFruit>5</AphrodisiacFruit>
+			<PsychoidLeaves>8</PsychoidLeaves>
+		</costList>
+	</ThingDef>
+
+</Defs>
