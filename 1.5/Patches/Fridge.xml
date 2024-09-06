@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Simple Utilities: Fridge</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="owl_refrigerator"]</xpath>
+					<value>
+						<building>
+							<fixedStorageSettings>
+								<filter>
+									<categories>
+										<li>RJW_Gastronomy_Food</li>
+									</categories>
+								</filter>
+							</fixedStorageSettings>
+							<defaultStorageSettings>
+								<filter>
+									<categories>
+										<li>RJW_Gastronomy_Meals</li>
+									</categories>
+								</filter>
+							</defaultStorageSettings>
+						</building>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="owl_doublerefrigerator"]</xpath>
+					<value>
+						<building>
+							<fixedStorageSettings>
+								<filter>
+									<categories>
+										<li>RJW_Gastronomy_Food</li>
+									</categories>
+								</filter>
+							</fixedStorageSettings>
+							<defaultStorageSettings>
+								<filter>
+									<categories>
+										<li>RJW_Gastronomy_Meals</li>
+									</categories>
+								</filter>
+							</defaultStorageSettings>
+						</building>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>
