@@ -35,7 +35,7 @@
 		<iconPath>UI/Icons/ThingCategories/AnimalProductRaw</iconPath>
     </ThingCategoryDef> 
 	
-	<ThingCategoryDef MayRequire="rjw.sexperience">
+	<ThingCategoryDef>
 		<defName>SexperienceCum</defName>
 		<label>cum</label>
 		<parent>RJW_Gastronomy_FoodRaw</parent>
