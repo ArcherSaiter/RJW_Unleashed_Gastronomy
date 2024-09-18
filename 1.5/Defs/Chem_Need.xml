@@ -14,7 +14,7 @@
 		<defName>Chemical_AphrodisiacFruit</defName>
 		<needClass>Need_Chemical</needClass>
 		<label>Aphrodisiac fruit</label>
-		<description>{PAWN_nameDef} got addicted to the aphrodisiac fruit. Being under its control is now a necessity</description>
+		<description>This creature got addicted to the aphrodisiac fruit. Being under its control is now a necessity</description>
 		<listPriority>10</listPriority>
 	</NeedDef>
 
