@@ -114,7 +114,6 @@
 		<li>
 			<minSeverity>0.99</minSeverity>
 			<label>obsession</label>
-			<lifeThreatening>true</lifeThreatening>
 			<statOffsets>
 				<SocialImpact>0.45</SocialImpact>
 				<SexFrequency>1.5</SexFrequency>
@@ -157,15 +156,6 @@
 				<offset>0.75</offset>
 				</li>
 			</capMods>
-			<hediffGivers>
-				<li Class="HediffGiver_Random">
-					<hediff>HeartAttack</hediff>
-					<mtbDays>90</mtbDays>
-					<partsToAffect>
-						<li>Heart</li>
-					</partsToAffect>
-				</li>
-            </hediffGivers>
 		</li>
 		<li>
 			<minSeverity>1.5</minSeverity>
@@ -215,17 +205,10 @@
 			</capMods>
 			<hediffGivers>
 				<li Class="HediffGiver_Random">
-					<hediff>HeartAttack</hediff>
-					<mtbDays>60</mtbDays>
-					<partsToAffect>
-						<li>Heart</li>
-					</partsToAffect>
-				</li>
-				<li Class="HediffGiver_Random">
 					<hediff>ChemicalDamageModerate</hediff>
 					<mtbDays>60</mtbDays>
 					<partsToAffect>
-						<li>Brain</li>
+						<li>Kidney</li>
 					</partsToAffect>
 				</li>
             </hediffGivers>
@@ -279,16 +262,16 @@
 			<hediffGivers>
 				<li Class="HediffGiver_Random">
 					<hediff>HeartAttack</hediff>
-					<mtbDays>30</mtbDays>
+					<mtbDays>120</mtbDays>
 					<partsToAffect>
 						<li>Heart</li>
 					</partsToAffect>
 				</li>
 				<li Class="HediffGiver_Random">
 					<hediff>ChemicalDamageModerate</hediff>
-					<mtbDays>30</mtbDays>
+					<mtbDays>60</mtbDays>
 					<partsToAffect>
-						<li>Brain</li>
+						<li>Kidney</li>
 					</partsToAffect>
 				</li>
             </hediffGivers>
@@ -343,7 +326,7 @@
 			<hediffGivers>
 				<li Class="HediffGiver_Random">
 					<hediff>HeartAttack</hediff>
-					<mtbDays>15</mtbDays>
+					<mtbDays>60</mtbDays>
 					<partsToAffect>
 						<li>Heart</li>
 					</partsToAffect>
@@ -352,7 +335,7 @@
 					<hediff>ChemicalDamageSevere</hediff>
 					<mtbDays>30</mtbDays>
 					<partsToAffect>
-						<li>Brain</li>
+						<li>Kidney</li>
 					</partsToAffect>
 				</li>
             </hediffGivers>
@@ -388,8 +371,7 @@
 			</li>
 		</comps>
 		<stages>
-			<li>
-			</li>
+			<li></li>
 			<li>
 				<label>withdrawal</label>
 				<statOffsets>
@@ -421,12 +403,12 @@
 					<offset>-0.5</offset>
 				</li>
 				</capMods>
-				<mentalStateGivers>
+				<!--<mentalStateGivers>
 				<li>
 					<mentalState>Binging_DrugExtreme</mentalState>
 					<mtbDays>30</mtbDays>
 				</li>
-				</mentalStateGivers>
+				</mentalStateGivers>-->
 			</li>
 		</stages>
 	</HediffDef>
