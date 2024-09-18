@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	
-	<ThingDef ParentName="DrugBase">
+	<ThingDef ParentName="PlantFoodRawBase">
 		<defName>AphrodisiacFruit</defName>
 		<label>aphrodisiac fruit</label>
 		<description>A small, fragrant fruit from the rare aphrodisiac tree. It's juicy and nutritious, known for its potent stimulating effects on sexual activity. While treasured by some cultures, others view it as a dangerous temptation.</description>
@@ -18,31 +18,47 @@
 			<HediffDef>AphrodisiacFruitAddiction</HediffDef>
 		</descriptionHyperlinks>
 		<statBases>
+			<MaxHitPoints>50</MaxHitPoints>
 			<MarketValue>15</MarketValue>
 			<Mass>0.075</Mass>
 			<Nutrition>0.25</Nutrition>
 			<FoodPoisonChanceFixedHuman>0</FoodPoisonChanceFixedHuman>
-			<Beauty>0</Beauty>
+			<Flammability>1.0</Flammability>
+			<DeteriorationRate>2</DeteriorationRate>
 		</statBases>
 		<thingCategories>
 			<li>RJW_Gastronomy_FoodRaw</li>
-			<li>PlantFoodRaw</li>
 		</thingCategories>
+		<thingClass>ThingWithComps</thingClass>
+		<category>Item</category>
+		<drawerType>MapMeshOnly</drawerType>
+		<useHitPoints>true</useHitPoints>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<selectable>true</selectable>
+		<altitudeLayer>Item</altitudeLayer>
+		<stackLimit>150</stackLimit>
+		<tradeTags>
+			<li>Drugs</li>
+		</tradeTags>
+		<alwaysHaulable>true</alwaysHaulable>
+		<pathCost>14</pathCost>
+		<resourceReadoutPriority>Last</resourceReadoutPriority>
+		<drawGUIOverlay>true</drawGUIOverlay>
 		<allowedArchonexusCount>50</allowedArchonexusCount>
 		<techLevel>Neolithic</techLevel>
 		<ingestible>
-			<nurseable>true</nurseable>
-			<drugCategory>Any</drugCategory>
 			<baseIngestTicks>75</baseIngestTicks>
 			<chairSearchRadius>5</chairSearchRadius>
-			<preferability>RawTasty</preferability>
+			<preferability>MealFine</preferability>
 			<tasteThought><!--AphrodisiacFruitThought--></tasteThought>
 			<foodType>VegetableOrFruit</foodType>
 			<joy>0.25</joy>
 			<joyKind>Social</joyKind>
 			<ingestEffect>EatVegetarian</ingestEffect>
 			<ingestSound>RawVegetable_Eat</ingestSound>
-			<optimalityOffsetHumanlikes>3</optimalityOffsetHumanlikes>
+			<maxNumToIngestAtOnce>4</maxNumToIngestAtOnce>
+			<defaultNumToIngestAtOnce>1</defaultNumToIngestAtOnce>
+			<optimalityOffsetHumanlikes>-5</optimalityOffsetHumanlikes>
 			<optimalityOffsetFeedingAnimals>-10</optimalityOffsetFeedingAnimals>
 			<outcomeDoers>
 				<li Class="IngestionOutcomeDoer_GiveHediff">
@@ -66,6 +82,7 @@
 			</outcomeDoers>
 		</ingestible>
 		<comps>
+			<li Class="CompProperties_Forbiddable" />
 			<li Class="CompProperties_Ingredients" />
 			<li Class="CompProperties_Rottable">
 				<daysToRotStart>15</daysToRotStart>
