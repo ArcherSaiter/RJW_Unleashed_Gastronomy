@@ -3,7 +3,7 @@
 	<ThingDef ParentName="PlantBase">
 		<defName>Plant_Aphrodisiac</defName>
 		<label>aphrodisiac tree</label>
-		<description>A short, rare tree that produces small, fragrant fruits. While all effects of these fruits are yet to be explored, it is known that thay are juicy, nutricious and when consumed, they stimulate creatures in a way that makes them way more sexually active than usual.\n\nThe tree itself is rough, as well as its leaves, which makes them hard to work with, however, robust structure also allows it to survive in most environments. As it can grow even on rocks with barely any light, there are legends of cave dwellers surviving just on aphrodisiac fruits, but the same legends also mention some sort of &lt;color=#E5E54C&gt;price&lt;/color&gt;. Thus, some cultures consider it sacred, while others see it as a dangerous temptation.\n\n Aphrodisiac trees tend to live long, extracting most of nutrients out of the soil, which makes them efficient in most conditions despite being hard to work with. Among other properties, they also have a unique charm, which makes them pleasing to look at and comfortable to rest beside if used as decorative room plant.</description>
+		<description>A short, rare tree that produces small, fragrant fruits. While all effects of these fruits are yet to be explored, it is known that thay are juicy, nutricious and when consumed, they stimulate creatures in a way that makes them way more sexually active than usual.\n\nThe tree itself is rough, as well as its leaves, which makes them hard to work with, however, robust structure also allows it to survive in most environments. As it can grow even on rocks with barely any light, there are legends of cave dwellers surviving just on aphrodisiac fruits, but the same legends also mention some sort of &lt;color=#E5E54C&gt;price&lt;/color&gt;. Thus, some cultures consider it sacred, while others see it as a dangerous temptation.\n\n Aphrodisiac trees tend to live long, extracting most of nutrients out of the soil, which makes them efficient in most conditions despite being hard to work with. Among other properties, they also have a unique charm, which makes them pleasing to look at.</description><!--and comfortable to rest beside if used as decorative room plant-->
 		<statBases>
 			<MaxHitPoints>450</MaxHitPoints>
 			<Nutrition>0.25</Nutrition>
@@ -22,6 +22,7 @@
 		<selectable>true</selectable>
 		<neverMultiSelect>false</neverMultiSelect>
 		<pathCost>35</pathCost>
+		<altitudeLayer>Item</altitudeLayer>
 		<ingestible />
 		<plant Inherit="False">
 			<soundHarvesting>Harvest_Standard</soundHarvesting>
@@ -63,14 +64,13 @@
 			<lifespanDaysPerGrowDays>60</lifespanDaysPerGrowDays>
 		</plant>
 		<comps>
-		<li Class="CompProperties_Facility">
+		<!--<li Class="CompProperties_Facility">
 			<statOffsets>
 				<Comfort>0.05</Comfort>
 			</statOffsets>
-			<mustBePlacedAdjacent>true</mustBePlacedAdjacent>
 			<maxSimultaneous>1</maxSimultaneous>
-			<maxDistance>5</maxDistance>
-		</li>
+			<maxDistance>10</maxDistance>
+		</li>-->
 		<li Class="CompProperties_MeditationFocus">
 			<statDef>MeditationFocusStrength</statDef>
 			<focusTypes>

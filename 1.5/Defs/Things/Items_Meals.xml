@@ -16,7 +16,7 @@
 			<DeteriorationRate>5</DeteriorationRate>
 		</statBases>
 		<altitudeLayer>Item</altitudeLayer>
-		<stackLimit>10</stackLimit>
+		<stackLimit>25</stackLimit>
 		<socialPropernessMatters>true</socialPropernessMatters>
 		<thingCategories>
 			<li>RJW_Gastronomy_Meals</li>
@@ -76,6 +76,7 @@
 			<DeteriorationRate>0</DeteriorationRate>
 			<Flammability>0.01</Flammability>
 		</statBases>
+		<stackLimit>50</stackLimit>
 		<ingestible>
 			<foodType>Fluid, AnimalProduct</foodType>
 			<preferability>DesperateOnlyForHumanlikes</preferability>
