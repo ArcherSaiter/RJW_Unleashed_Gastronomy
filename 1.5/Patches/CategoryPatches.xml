@@ -136,4 +136,21 @@
     </match>
 </Operation>
 
+<Operation Class="PatchOperationFindMod">
+    <mods>
+        <li>Cumpilation</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="Cumpilation_Cum"]/thingCategories</xpath>
+                <value>
+                    <!--<li>RJW_Gastronomy_FoodRaw</li>-->
+					<li>SexperienceCum</li>
+                </value>
+            </li>
+        </operations>
+    </match>
+</Operation>
+
 </Patch>
