@@ -18,10 +18,10 @@ namespace RJW_Unleashed_Gastronomy
             {
                 foreach (ThingDef ingredient in compIngredients.ingredients)
                 {
-                    ApplyEffect.FullExtension(pawn, thingDef);
-                    if (thingDef.GetModExtension<TransformationAddon>() != null)
+                    ApplyEffect.FullExtension(pawn, ingredient);
+                    if (ingredient.GetModExtension<TransformationAddon>() != null)
                     {
-                        ApplyEffect.ExtensionApplierGenetic(pawn, thingDef);
+                        ApplyEffect.ExtensionApplierGenetic(pawn, ingredient);
                     }
                 }
             }
