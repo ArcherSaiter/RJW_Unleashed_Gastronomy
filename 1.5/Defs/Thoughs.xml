@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+		
+	<ThoughtDef>
+	<defName>AteEroticKibble</defName>
+	<durationDays>1</durationDays>
+	<stages>
+		<li>
+		<label>ate erotic kibble</label>
+		<description>Such food isn't appropriate for humans! Well... at least it was a bit arousing.</description>
+		<baseMoodEffect>-9</baseMoodEffect>
+		</li>
+	</stages>
+	</ThoughtDef>
+  
+	<ThoughtDef>
+	<defName>AteEroticMealSimple</defName>
+	<durationDays>0.5</durationDays>
+	<stages>
+		<li>
+		<label>ate erotic meal</label>
+		<description>A sexual touch made this meal kinda nice.</description>
+		<baseMoodEffect>2</baseMoodEffect>
+		</li>
+	</stages>
+	<replaceThoughts>
+		<li>AteFineMeal</li>
+		<li>AteLavishMeal</li>
+		<li>AteEroticMealFine</li>
+		<li>AteEroticMealLavish</li>
+		<li>AteEroticMealGourmet</li>
+    </replaceThoughts>
+	</ThoughtDef>
+  
+	<ThoughtDef>
+	<defName>AteEroticMealFine</defName>
+	<durationDays>1</durationDays>
+	<stages>
+		<li>
+		<label>ate erotic fine meal</label>
+		<description>It was tasty by itself, and a sexual touch made it even better.</description>
+		<baseMoodEffect>7</baseMoodEffect>
+		</li>
+	</stages>
+	<replaceThoughts>
+		<li>AteFineMeal</li>
+		<li>AteLavishMeal</li>
+		<li>AteEroticMealSimple</li>
+		<li>AteEroticMealLavish</li>
+		<li>AteEroticMealGourmet</li>
+    </replaceThoughts>
+	</ThoughtDef>
+	
+	<ThoughtDef>
+	<defName>AteEroticMealLavish</defName>
+	<durationDays>1</durationDays>
+	<stages>
+		<li>
+		<label>ate erotic lavish meal</label>
+		<description>This meal was amasing and arousing! It saturated me in one way, by made me hungry the other.</description>
+		<baseMoodEffect>15</baseMoodEffect>
+		</li>
+	</stages>
+	<replaceThoughts>
+		<li>AteFineMeal</li>
+		<li>AteLavishMeal</li>
+		<li>AteEroticMealFine</li>
+		<li>AteEroticMealSimple</li>
+		<li>AteEroticMealGourmet</li>
+    </replaceThoughts>
+	</ThoughtDef>
+	
+	<ThoughtDef>
+	<defName>AteEroticMealGourmet</defName>
+	<durationDays>1</durationDays>
+	<stages>
+		<li>
+		<label>ate erotic lavish meal</label>
+		<description>This meal was true masterpiece of culinary: balanced, well-presented, tasty and it even had a special erotic touch about it! Such meal is perfect in just about everything, the sensations cannot be fully described in mere words.</description>
+		<baseMoodEffect>20</baseMoodEffect>
+		</li>
+	</stages>
+	<replaceThoughts>
+		<li>AteFineMeal</li>
+		<li>AteLavishMeal</li>
+		<li>AteEroticMealFine</li>
+		<li>AteEroticMealSimple</li>
+		<li>AteEroticMealLavish</li>
+    </replaceThoughts>
+	</ThoughtDef>
+	
+</Defs>

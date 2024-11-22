@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+<Operation Class="PatchOperationFindMod">
+    <mods>
+        <li>RimJobWorld</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="HumpShroom"]</xpath>
+                <value>
+				<modExtensions>
+					<!--for outcomes of custom uses-->
+					<li Class="RJW_Unleashed_Framework.SourceEffectLinkEx">
+						<sourceName>HumpShroom</sourceName> <!--defName-->
+						<!--hediff defName IF should add hediff-->
+						<effectHediffDef>HumpShroomEffect</effectHediffDef>
+						<!--thought defName IF should add thought; not needed if though triggered by hediff-->
+						<effectThoughtDef></effectThoughtDef>
+						<!--trait defName IF should add trait-->
+						<effectTraitDef></effectTraitDef>
+						<!--gene defName IF should add gene-->
+						<effectGeneDef></effectGeneDef>
+						<!--severity of added hediff-->
+						<severityMultiplier>0.25</severityMultiplier>
+						<!--duration of added thought, in Days(60 000 ticks)-->
+						<thoughtDurationDays>0</thoughtDurationDays>
+						<!--chance to get trait, from 0.0 to 1.0 where 1.0 = 100%-->
+						<traitGainProbability>0.1</traitGainProbability>
+						<!--chance to get gene, from 0.0 to 1.0 where 1.0 = 100%-->
+						<geneGainProbability>0.1</geneGainProbability>
+						<!--allows to bypass conflicts and/or add same trait, use carefully-->
+						<traitForced>false</traitForced> <!--true or false-->
+						<!--whether added gene is endo- or xeno- -->
+						<addAsXenogene>true</addAsXenogene> <!--true or false-->
+						<!--whether severityMultiplier should be divided by bodysize-->
+						<considerBodysize>true</considerBodysize> <!--true or false-->
+						<!--filters pawns: not applicable = no effects-->
+						<applicableForMales>true</applicableForMales> <!--true or false-->
+						<applicableForFemales>true</applicableForFemales> <!--true or false-->
+					</li>
+				</modExtensions>
+				</value>
+            </li>
+        </operations>
+    </match>
+</Operation>
+
+<Operation Class="PatchOperationFindMod">
+    <mods>
+        <li>RJW Sexpanded Core</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="RJWReProduce_RawCocktus"]</xpath>
+                <value>
+				<modExtensions>
+					<li Class="RJW_Unleashed_Framework.SourceEffectLinkEx">
+						<sourceName>RJWReProduce_RawCocktus</sourceName>
+						<effectHediffDef>CocktusEffect</effectHediffDef>
+						<severityMultiplier>0.25</severityMultiplier>
+						<considerBodysize>true</considerBodysize>
+						<applicableForMales>true</applicableForMales>
+						<applicableForFemales>true</applicableForFemales>
+					</li>
+				</modExtensions>
+				</value>
+            </li>
+			<li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="RJWReProduce_RawUdderfruit"]</xpath>
+                <value>
+				<modExtensions>
+					<li Class="RJW_Unleashed_Framework.SourceEffectLinkEx">
+						<sourceName>RJWReProduce_RawUdderfruit</sourceName>
+						<effectHediffDef>UdderfruitEffect</effectHediffDef>
+						<severityMultiplier>0.25</severityMultiplier>
+						<considerBodysize>true</considerBodysize>
+						<applicableForMales>true</applicableForMales>
+						<applicableForFemales>true</applicableForFemales>
+					</li>
+				</modExtensions>
+				</value>
+            </li>
+			<li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="RJWReProduce_RawToxicle"]</xpath>
+                <value>
+				<modExtensions>
+					<li Class="RJW_Unleashed_Framework.SourceEffectLinkEx">
+						<sourceName>RJWReProduce_RawToxicle</sourceName>
+						<effectHediffDef>ToxicBuildup</effectHediffDef>
+						<severityMultiplier>-0.15</severityMultiplier>
+						<considerBodysize>true</considerBodysize>
+						<applicableForMales>true</applicableForMales>
+						<applicableForFemales>true</applicableForFemales>
+					</li>
+				</modExtensions>
+				</value>
+            </li>
+			<li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="RJWReProduce_RawFrigina"]</xpath>
+                <value>
+				<modExtensions>
+					<li Class="RJW_Unleashed_Framework.SourceEffectLinkEx">
+						<sourceName>RJWReProduce_RawFrigina</sourceName>
+						<effectHediffDef>FriginaEffect</effectHediffDef>
+						<severityMultiplier>0.25</severityMultiplier>
+						<considerBodysize>true</considerBodysize>
+						<applicableForMales>true</applicableForMales>
+						<applicableForFemales>true</applicableForFemales>
+					</li>
+				</modExtensions>
+				</value>
+            </li>
+        </operations>
+    </match>
+</Operation>
+
+<Operation Class="PatchOperationFindMod">
+    <mods>
+        <li>Cumpilation</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="Cumpilation_Cum"]</xpath>
+                <value>
+				<modExtensions>
+					<li Class="RJW_Unleashed_Framework.SourceEffectLinkEx">
+						<sourceName>Cumpilation_Cum</sourceName>
+						<effectThoughtDef>AteCum</effectThoughtDef>
+						<effectTraitDef>CumSlut</effectTraitDef>
+						<thoughtDurationDays>0.5</thoughtDurationDays>
+						<traitGainProbability>0.1</traitGainProbability>
+						<traitForced>false</traitForced>
+						<applicableForMales>true</applicableForMales>
+						<applicableForFemales>true</applicableForFemales>
+					</li>
+				</modExtensions>
+				</value>
+            </li>
+			<li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="Cumpilation_Cum"]/ingestible</xpath>
+                <value>
+					<drugCategory>Any</drugCategory>
+					<tasteThought>AteCum</tasteThought>
+					<specialThoughtAsIngredient>AteCum</specialThoughtAsIngredient>
+				</value>
+            </li>
+			<li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="Cumpilation_Cum"]/ingestible/outcomeDoers</xpath>
+                <value>
+					<li Class="IngestionOutcomeDoer_OffsetPsyfocus">
+						<offset>0.01</offset>
+					</li>
+				</value>
+            </li>
+        </operations>
+    </match>
+</Operation>
+
+<Operation Class="PatchOperationFindMod">
+    <mods>
+        <li>S16's Extension</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="S16GirlCum"]</xpath>
+                <value>
+				<modExtensions>
+					<li Class="RJW_Unleashed_Framework.SourceEffectLinkEx">
+						<sourceName>S16GirlCum</sourceName>
+						<effectHediffDef>S16AteGirlCumRaw</effectHediffDef>
+						<severityMultiplier>0.25</severityMultiplier>
+						<considerBodysize>true</considerBodysize>
+						<applicableForMales>true</applicableForMales>
+						<applicableForFemales>true</applicableForFemales>
+					</li>
+				</modExtensions>
+				</value>
+            </li>
+        </operations>
+    </match>
+</Operation>
+
+</Patch>
