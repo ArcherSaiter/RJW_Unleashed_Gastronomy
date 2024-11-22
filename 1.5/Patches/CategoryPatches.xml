@@ -17,7 +17,7 @@
     </match>
 </Operation>
 
-<Operation Class="PatchOperationFindMod">
+<!--<Operation Class="PatchOperationFindMod">
     <mods>
         <li>RJW Sexperience</li>
     </mods>
@@ -26,13 +26,13 @@
 			<li Class="PatchOperationAdd">
                 <xpath>Defs/ThingDef[defName="GatheredCum"]/thingCategories</xpath>
                 <value>
-                    <!--<li>RJW_Gastronomy_FoodRaw</li>-->
-					<li>SexperienceCum</li>
+                    <!{1}**<li>RJW_Gastronomy_FoodRaw</li>**{1}>
+					<li>Cum</li>
                 </value>
             </li>
         </operations>
     </match>
-</Operation>
+</Operation>-->
 
 <Operation Class="PatchOperationFindMod">
     <mods>
@@ -146,7 +146,7 @@
                 <xpath>Defs/ThingDef[defName="Cumpilation_Cum"]/thingCategories</xpath>
                 <value>
                     <!--<li>RJW_Gastronomy_FoodRaw</li>-->
-					<li>SexperienceCum</li>
+					<li>Cum</li>
                 </value>
             </li>
         </operations>
