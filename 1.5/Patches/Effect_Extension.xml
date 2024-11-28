@@ -17,7 +17,7 @@
 						<!--hediff defName IF should add hediff-->
 						<effectHediffDef>HumpShroomEffect</effectHediffDef>
 						<!--thought defName IF should add thought; not needed if though triggered by hediff-->
-						<effectThoughtDef>HumpShroomEffect</effectThoughtDef>
+						<effectThoughtDef></effectThoughtDef>
 						<!--trait defName IF should add trait-->
 						<effectTraitDef></effectTraitDef>
 						<!--gene defName IF should add gene-->
@@ -25,7 +25,7 @@
 						<!--severity of added hediff-->
 						<severityMultiplier>0.25</severityMultiplier>
 						<!--duration of added thought, in Days(60 000 ticks)-->
-						<thoughtDurationDays>0.5</thoughtDurationDays>
+						<thoughtDurationDays>0</thoughtDurationDays>
 						<!--chance to get trait, from 0.0 to 1.0 where 1.0 = 100%-->
 						<traitGainProbability>0.1</traitGainProbability>
 						<!--chance to get gene, from 0.0 to 1.0 where 1.0 = 100%-->
