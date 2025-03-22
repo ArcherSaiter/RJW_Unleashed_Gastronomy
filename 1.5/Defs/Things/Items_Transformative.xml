@@ -11,11 +11,6 @@
 			<rotDestroys>true</rotDestroys>
 			</li>
 		</comps>
-		<ingestible>
-			<outcomeDoers>
-				<li Class="RJW_Unleashed_Gastronomy.RJW_Unleashed_GastronomyIngestionOutcomeDoer"></li>
-			</outcomeDoers>
-		</ingestible>
 		<recipeMaker>
 			<workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
 			<workSkill>Intellectual</workSkill>
@@ -89,11 +84,11 @@
 			<li Class="RJW_Unleashed_Framework.SourceEffectLinkEx">
 				<sourceName>RJW_Gastronomy_Bimbo_Icecream</sourceName> <!--defName-->
 				<!--hediff defName IF should add hediff-->
-				<effectHediffDef MayRequire="vegapnk.rjw.genes">RJW_Unleashed_Bimbofication</effectHediffDef>
+				<effectHediffDef>RJW_Unleashed_Bimbofication</effectHediffDef>
 				<!--trait defName IF should add trait-->
 				<effectTraitDef>RJW_Traits_Bimbo</effectTraitDef>
 				<!--severity of added hediff-->
-				<severityMultiplier>0.25</severityMultiplier>
+				<severityMultiplier>0.35</severityMultiplier>
 				<!--chance to get trait, from 0.0 to 1.0 where 1.0 = 100%-->
 				<traitGainProbability>0.2</traitGainProbability>
 				<!--allows to bypass conflicts and/or add same trait, use carefully-->
