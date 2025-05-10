@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+<Operation Class="PatchOperationFindMod">
+    <mods>
+        <li>RJW Sexpanded Corruption</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="RJWReProduce_RawCocktus"]/modExtensions</xpath>
+                <value>
+				<li Class="Gastronomy_CorruptionAddon.CorruptionAddon">
+					<effectHediffDef>RJW_Corruption</effectHediffDef>
+					<severity>0.15</severity>
+				</li>
+				</value>
+            </li>
+			<li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="RJWReProduce_RawUdderfruit"]/modExtensions</xpath>
+                <value>
+				<li Class="Gastronomy_CorruptionAddon.CorruptionAddon">
+					<effectHediffDef>RJW_Corruption</effectHediffDef>
+					<severity>0.15</severity>
+				</li>
+				</value>
+            </li>
+			<li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="RJWReProduce_RawFrigina"]/modExtensions</xpath>
+                <value>
+				<li Class="Gastronomy_CorruptionAddon.CorruptionAddon">
+					<effectHediffDef>RJW_Corruption</effectHediffDef>
+					<severity>-0.15</severity>
+				</li>
+				</value>
+            </li>
+        </operations>
+    </match>
+</Operation>
+
+</Patch>
