@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingCategoryDef>
+		<defName>RJW_Gastronomy_Root</defName>
+		<label>RJW Gastronomy root</label>
+		<parent>Root</parent>
+	</ThingCategoryDef>
+	
+	<ThingCategoryDef>
+		<defName>RJW_Gastronomy_Food</defName>
+		<label>erotic foods</label>
+		<parent>RJW_Gastronomy_Root</parent>
+		<resourceReadoutRoot>true</resourceReadoutRoot>
+		<iconPath>UI/Icons/ThingCategories/Foods</iconPath>
+	</ThingCategoryDef>
+	
+    <ThingCategoryDef>
+		<defName>RJW_Gastronomy_Meals</defName>
+		<label>erotic meals</label>
+		<parent>RJW_Gastronomy_Food</parent>
+		<iconPath>UI/Icons/ThingCategories/FoodMeals</iconPath>
+    </ThingCategoryDef>
+
+    <ThingCategoryDef>
+		<defName>RJW_Gastronomy_FoodRaw</defName>
+		<label>raw erotic food</label>
+		<parent>RJW_Gastronomy_Food</parent>
+		<iconPath>UI/Icons/ThingCategories/FoodRaw</iconPath>
+    </ThingCategoryDef> 
+	
+	<ThingCategoryDef>
+		<defName>RJW_Gastronomy_Humilk</defName>
+		<label>human milk</label>
+		<parent>RJW_Gastronomy_FoodRaw</parent>
+		<iconPath>UI/Icons/ThingCategories/AnimalProductRaw</iconPath>
+    </ThingCategoryDef> 
+	
+	<ThingCategoryDef>
+		<defName>Cum</defName>
+		<label>cum</label>
+		<parent>RJW_Gastronomy_FoodRaw</parent>
+		<iconPath>UI/Icons/ThingCategories/AnimalProductRaw</iconPath>
+    </ThingCategoryDef> 
+	
+	<!--<ThingCategoryDef>
+		<defName>RJW_Gastronomy_Druglike</defName>
+		<label>erotic druglike food</label>
+		<parent>RJW_Gastronomy_Root</parent>
+		<iconPath>UI/Icons/ThingCategories/Drugs</iconPath>
+    </ThingCategoryDef>-->
+	
+	<ThingCategoryDef>
+		<defName>RJW_Gastronomy_Transformative</defName>
+		<label>erotic transformative food</label>
+		<parent>RJW_Gastronomy_Root</parent>
+		<iconPath>UI/Icons/ThingCategories/Drugs</iconPath>
+    </ThingCategoryDef> 
+	
+</Defs>

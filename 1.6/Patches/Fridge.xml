@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Simple Utilities: Fridge</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="owl_refrigerator"]</xpath>
+					<value>
+						<building>
+							<fixedStorageSettings>
+								<filter>
+									<categories>
+										<li>RJW_Gastronomy_Food</li>
+									</categories>
+								</filter>
+							</fixedStorageSettings>
+							<defaultStorageSettings>
+								<filter>
+									<categories>
+										<li>RJW_Gastronomy_Meals</li>
+									</categories>
+								</filter>
+							</defaultStorageSettings>
+						</building>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="owl_doublerefrigerator"]</xpath>
+					<value>
+						<building>
+							<fixedStorageSettings>
+								<filter>
+									<categories>
+										<li>RJW_Gastronomy_Food</li>
+									</categories>
+								</filter>
+							</fixedStorageSettings>
+							<defaultStorageSettings>
+								<filter>
+									<categories>
+										<li>RJW_Gastronomy_Meals</li>
+									</categories>
+								</filter>
+							</defaultStorageSettings>
+						</building>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>[sbz] Neat Storage</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+		<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="sbz_DisplayTable"]/building/fixedStorageSettings/filter/categories</xpath>
+					<value>
+						<li>RJW_Gastronomy_Food</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="sbz_OpenShelf"]/building/fixedStorageSettings/filter/categories</xpath>
+					<value>
+						<li>RJW_Gastronomy_Food</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="sbz_TwoTierDisplayShelf"]/building/fixedStorageSettings/filter/categories</xpath>
+					<value>
+						<li>RJW_Gastronomy_Food</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="sbz_DisplayShelf"]/building/fixedStorageSettings/filter/categories</xpath>
+					<value>
+						<li>RJW_Gastronomy_Food</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="sbz_SmallDisplayShelf"]/building/fixedStorageSettings/filter/categories</xpath>
+					<value>
+						<li>RJW_Gastronomy_Food</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="sbz_TallDisplayShelf"]/building/fixedStorageSettings/filter/categories</xpath>
+					<value>
+						<li>RJW_Gastronomy_Food</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="sbz_NarrowTallDisplayShelf"]/building/fixedStorageSettings/filter/categories</xpath>
+					<value>
+						<li>RJW_Gastronomy_Food</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="sbz_WideHangerShelf"]/building/fixedStorageSettings/filter/categories</xpath>
+					<value>
+						<li>RJW_Gastronomy_Food</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="sbz_HangerShelf"]/building/fixedStorageSettings/filter/categories</xpath>
+					<value>
+						<li>RJW_Gastronomy_Food</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="sbz_DisplayCabinet"]/building/fixedStorageSettings/filter/categories</xpath>
+					<value>
+						<li>RJW_Gastronomy_Food</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="sbz_NarrowDisplayCabinet"]/building/fixedStorageSettings/filter/categories</xpath>
+					<value>
+						<li>RJW_Gastronomy_Food</li>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+	<!--<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>[sbz] Fridge</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="sbz_FridgeBase"]/building/fixedStorageSettings/filter/categories</xpath>
+					<value>
+						<li>RJW_Gastronomy_Food</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="sbz_LargeFridge"]/building/fixedStorageSettings/filter/categories</xpath>
+					<value>
+						<li>RJW_Gastronomy_Food</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="sbz_SingleChestFridge"]/building/fixedStorageSettings/filter/categories</xpath>
+					<value>
+						<li>RJW_Gastronomy_Food</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="sbz_DoubleChestFridge"]/building/fixedStorageSettings/filter/categories</xpath>
+					<value>
+						<li>RJW_Gastronomy_Food</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="sbz_SingleWallFridge"]/building/fixedStorageSettings/filter/categories</xpath>
+					<value>
+						<li>RJW_Gastronomy_Food</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="sbz_DoubleWallFridge"]/building/fixedStorageSettings/filter/categories</xpath>
+					<value>
+						<li>RJW_Gastronomy_Food</li>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>-->
+</Patch>

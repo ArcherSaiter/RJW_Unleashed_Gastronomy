@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ThingDef  MayRequire="rjw.milk.humanoid" ParentName="OrganicProductBase">
+    <defName>RJW_Gastronomy_Humilk_Powdered</defName>
+    <label>powdered human milk</label>
+    <description>Powdered human milk. Dried thoroughly and can last a long long time.</description>
+    <graphicData>
+      <texPath>Things/Foods/RjwCE_PowderedHumanMilk</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <thingCategories>
+      <li>AnimalProductRaw</li>
+	  <li>RJW_Gastronomy_Humilk</li>
+    </thingCategories>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <stackLimit>150</stackLimit>
+	<statBases>
+		<MarketValue>0.1</MarketValue>
+		<Mass>0.01</Mass>
+		<MaxHitPoints>20</MaxHitPoints>
+		<Flammability>1.0</Flammability>
+		<DeteriorationRate>0.5</DeteriorationRate>
+		<Nutrition>0.05</Nutrition>
+	</statBases>
+	<comps>
+		<li Class="CompProperties_Rottable">
+			<daysToRotStart>90</daysToRotStart>
+			<rotDestroys>true</rotDestroys>
+		</li>
+	</comps>
+	<ingestible>
+		<preferability>DesperateOnly</preferability>
+		<foodType>AnimalProduct</foodType>
+		<ingestSound>Ingest_Snort</ingestSound>
+		<babiesCanIngest>true</babiesCanIngest>
+	</ingestible>
+  </ThingDef>
+
+  <ThingDef  MayRequire="rjw.milk.humanoid" ParentName="OrganicProductBase">
+    <defName>RJW_Gastronomy_Humilk_Condensed</defName>
+    <label>condensed human milk</label>
+    <description>Condensed human milk. With added sugar and water removed this milk can last forever.</description>
+    <graphicData>
+      <texPath>Things/Foods/RjwCE_CondensedHumanMilk</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <thingCategories>
+      <li>AnimalProductRaw</li>
+	  <li>RJW_Gastronomy_Humilk</li>
+    </thingCategories>
+    <socialPropernessMatters>true</socialPropernessMatters>
+		<statBases>
+			<MarketValue>0.5</MarketValue>
+			<Mass>0.05</Mass>
+			<MaxHitPoints>50</MaxHitPoints>
+			<Flammability>0.05</Flammability>
+			<DeteriorationRate>0.05</DeteriorationRate>
+			<Nutrition>0.75</Nutrition>
+		</statBases>
+		<ingestible>
+			<preferability>RawTasty</preferability>
+			<foodType>AnimalProduct, Fluid</foodType>
+			<ingestSound>Ingest_Drink</ingestSound>
+			<babiesCanIngest>true</babiesCanIngest>
+		</ingestible>
+		<modExtensions>
+			<li Class="DubsBadHygiene.WaterExt" MayRequire="dubwise.dubsbadhygiene">
+				<water>0.03</water>
+				<UseForWashing>false</UseForWashing>
+				<SeekForThirst>false</SeekForThirst>
+			</li>
+		</modExtensions>
+  </ThingDef>
+
+</Defs>
