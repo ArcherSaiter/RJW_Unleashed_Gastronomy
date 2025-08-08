@@ -16,7 +16,7 @@
 			<DeteriorationRate>5</DeteriorationRate>
 		</statBases>
 		<altitudeLayer>Item</altitudeLayer>
-		<stackLimit>25</stackLimit>
+		<stackLimit>75</stackLimit>
 		<socialPropernessMatters>true</socialPropernessMatters>
 		<thingCategories>
 			<li>RJW_Gastronomy_Meals</li>
@@ -32,7 +32,7 @@
 		<uiIconForStackCount>1</uiIconForStackCount>
 		<ingestible>
 			<foodType>Meal</foodType>
-			<maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+			<maxNumToIngestAtOnce>25</maxNumToIngestAtOnce>
 			<defaultNumToIngestAtOnce>1</defaultNumToIngestAtOnce>
 			<optimalityOffsetHumanlikes>16</optimalityOffsetHumanlikes>
 			<optimalityOffsetFeedingAnimals>-5</optimalityOffsetFeedingAnimals>
