@@ -55,14 +55,15 @@
 			<foodType>Processed</foodType>
 			<joy>0.25</joy>
 			<joyKind>Chemical</joyKind>
-			<preferability>NeverForNutrition</preferability>
+			<preferability>DesperateOnly</preferability>
 			<ingestEffect>EatVegetarian</ingestEffect>
 			<ingestSound>Meal_Eat</ingestSound>
 			<nurseable>true</nurseable>
+			<drugCategory>Any</drugCategory>
 			<maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
 			<defaultNumToIngestAtOnce>1</defaultNumToIngestAtOnce>
-			<optimalityOffsetHumanlikes>-20</optimalityOffsetHumanlikes>
-			<optimalityOffsetFeedingAnimals>-99</optimalityOffsetFeedingAnimals>
+			<optimalityOffsetHumanlikes>-10</optimalityOffsetHumanlikes>
+			<optimalityOffsetFeedingAnimals>-20</optimalityOffsetFeedingAnimals>
 			<outcomeDoers>
 				<li Class="IngestionOutcomeDoer_OffsetNeed">
 					<need>Sex</need>
@@ -104,6 +105,16 @@
 			<AphrodisiacFruit>5</AphrodisiacFruit>
 			<PsychoidLeaves>8</PsychoidLeaves>
 		</costList>
+		<comps>
+			<li Class="CompProperties_Drug">
+				<chemical>AphrodisiacFruitChemical</chemical>
+				<addictiveness>0.01</addictiveness>
+				<minToleranceToAddict>0.0</minToleranceToAddict>
+				<existingAddictionSeverityOffset>0.15</existingAddictionSeverityOffset>
+				<needLevelOffset>0.5</needLevelOffset>
+				<listOrder>99</listOrder>
+			</li>
+		</comps>
 	</ThingDef>
 
 </Defs>
