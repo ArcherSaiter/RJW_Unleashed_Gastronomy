@@ -169,7 +169,7 @@
 	</ThingDef>
   
 	<!-- ===== Pemmican ===== -->
-	<ThingDef>
+	<ThingDef ParentName="RJW_Gastronomy_Base_Meal_Ingredientless">
 		<defName>RJW_Gastronomy_Pemmican</defName>
 		<label>erotic pemmican</label>
 		<description>A preserved mashed mixture of various erotic ingredients. Tastes a bit better than regular pemmican and can last a very long time without refrigeration.</description>
@@ -184,9 +184,6 @@
 			<DeteriorationRate>2</DeteriorationRate>
 			<WorkToMake>700</WorkToMake>
 			<Nutrition>0.05</Nutrition>
-			<MaxHitPoints>50</MaxHitPoints>
-			<Flammability>1.0</Flammability>
-			<Beauty>0</Beauty>
 		</statBases>
 		<ingestible>
 			<ingestEffect>EatVegetarian</ingestEffect>
@@ -195,16 +192,9 @@
 			<preferability>MealSimple</preferability>
 			<!--<tasteThought>AteKibble</tasteThought>-->
 			<optimalityOffsetHumanlikes>7</optimalityOffsetHumanlikes>
-			<maxNumToIngestAtOnce>75</maxNumToIngestAtOnce>
-			<defaultNumToIngestAtOnce>20</defaultNumToIngestAtOnce>
-			<optimalityOffsetFeedingAnimals>-5</optimalityOffsetFeedingAnimals>
-			<outcomeDoers>
-				<li Class="RJW_Unleashed_Gastronomy.RJW_Unleashed_GastronomyIngestionOutcomeDoer"></li>
-			</outcomeDoers>
 		</ingestible>
 		<tickerType>Rare</tickerType>
 		<comps>
-			<li Class="CompProperties_Forbiddable" />
 			<li Class="CompProperties_Ingredients">
 				<splitTransferableFoodKind>true</splitTransferableFoodKind>
 			</li>
@@ -213,24 +203,6 @@
 				<rotDestroys>true</rotDestroys>
 			</li>
 		</comps>
-		<thingClass>ThingWithComps</thingClass>
-		<category>Item</category>
-		<drawerType>MapMeshOnly</drawerType>
-		<useHitPoints>true</useHitPoints>
-		<healthAffectsPrice>false</healthAffectsPrice>
-		<selectable>true</selectable>
-		<altitudeLayer>Item</altitudeLayer>
-		<stackLimit>75</stackLimit>
-		<socialPropernessMatters>true</socialPropernessMatters>
-		<thingCategories>
-			<li>RJW_Gastronomy_Meals</li>
-		</thingCategories>
-		<alwaysHaulable>true</alwaysHaulable>
-		<pathCost>14</pathCost>
-		<allowedArchonexusCount>50</allowedArchonexusCount>
-		<resourceReadoutPriority>Last</resourceReadoutPriority>
-		<drawGUIOverlay>true</drawGUIOverlay>
-		<tradeability>Sellable</tradeability>
 	</ThingDef>
 
 </Defs>
