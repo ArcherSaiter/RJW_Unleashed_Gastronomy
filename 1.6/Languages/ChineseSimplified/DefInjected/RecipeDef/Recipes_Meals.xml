@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <RJW_Gastronomy_KibbleBulk.label>制作爱欲饲料 x4</RJW_Gastronomy_KibbleBulk.label>
+  <RJW_Gastronomy_KibbleBulk.description>结合各种爱欲食材组合制作饲料。</RJW_Gastronomy_KibbleBulk.description>
+  <RJW_Gastronomy_KibbleBulk.jobString>正在制作爱欲饲料 x4。</RJW_Gastronomy_KibbleBulk.jobString>
+  
+  <RJW_Gastronomy_KibbleSingle.label>制作爱欲饲料</RJW_Gastronomy_KibbleSingle.label>
+  <RJW_Gastronomy_KibbleSingle.description>结合各种爱欲食材组合制作饲料。</RJW_Gastronomy_KibbleSingle.description>
+  <RJW_Gastronomy_KibbleSingle.jobString>正在制作爱欲饲料。</RJW_Gastronomy_KibbleSingle.jobString>
+  
+  <RJW_Gastronomy_PemmicanBulk.label>制作爱欲干肉饼 x4</RJW_Gastronomy_PemmicanBulk.label>
+  <RJW_Gastronomy_PemmicanBulk.description>制作爱欲干肉饼，一种由多种食材组合而成的耐贮存食品。这种食品不仅无需冷藏即可长期保存，而且味道比普通的干肉饼稍好一些。</RJW_Gastronomy_PemmicanBulk.description>
+  <RJW_Gastronomy_PemmicanBulk.jobString>正在制作爱欲干肉饼 x4。</RJW_Gastronomy_PemmicanBulk.jobString>
+  
+  <RJW_Gastronomy_PemmicanSingle.label>制作爱欲干肉饼</RJW_Gastronomy_PemmicanSingle.label>
+  <RJW_Gastronomy_PemmicanSingle.description>制作爱欲干肉饼，一种由多种食材组合而成的耐贮存食品。这种食品不仅无需冷藏即可长期保存，而且味道比普通的干肉饼稍好一些。</RJW_Gastronomy_PemmicanSingle.description>
+  <RJW_Gastronomy_PemmicanSingle.jobString>正在制作爱欲干肉饼。</RJW_Gastronomy_PemmicanSingle.jobString>
+  
+</LanguageData>
