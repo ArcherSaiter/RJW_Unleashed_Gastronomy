@@ -134,6 +134,82 @@
 		</comps>-->
 	</ThingDef>
 
+	<!-- Support lite version -->
+	<ThingDef ParentName="RJW_Gastronomy_Base_Meal_Ingredientless" MayRequire="parciwal.cumpliationlite">
+		<defName>RJW_Gastronomy_CumCanned</defName>
+		<label>Canned cum</label>
+		<description>A can of cum, can be stored almost forever.</description>
+		<graphicData>
+			<texPath>Things/Meals/CannedCum</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<descriptionHyperlinks>
+			<!--<ChemicalDef>Cum</ChemicalDef>-->
+			<ThingDef>Cumpilation_Cum</ThingDef>
+		</descriptionHyperlinks>
+		<statBases>
+			<MarketValue>2</MarketValue>
+			<WorkToMake>100</WorkToMake>
+			<Nutrition>0.2</Nutrition>
+			<FoodPoisonChanceFixedHuman>0.00</FoodPoisonChanceFixedHuman>
+			<DeteriorationRate>0</DeteriorationRate>
+			<Flammability>0.01</Flammability>
+		</statBases>
+		<stackLimit>50</stackLimit>
+		<ingestible>
+			<foodType>Fluid, AnimalProduct</foodType>
+			<preferability>DesperateOnlyForHumanlikes</preferability>
+			<!--<drugCategory>Any</drugCategory>-->
+			<!--<nurseable>true</nurseable>-->
+			<ingestSound>Ingest_Beer</ingestSound>
+			<canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
+			<tableDesired>false</tableDesired>
+			<tasteThought>AteCum</tasteThought>
+			<specialThoughtAsIngredient>AteCum</specialThoughtAsIngredient>
+			<optimalityOffsetHumanlikes>-10</optimalityOffsetHumanlikes>
+			<optimalityOffsetFeedingAnimals>-10</optimalityOffsetFeedingAnimals>
+			<outcomeDoers Inherit="False">
+				<!--<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>CumTolerance</hediffDef>
+					<!{1}**<toleranceChemical>Cum</toleranceChemical>**{1}>
+					<severity>0.65</severity>
+					<divideByBodySize>true</divideByBodySize>
+					<multiplyByGeneToleranceFactors>true</multiplyByGeneToleranceFactors>
+				</li>-->
+				<li Class="IngestionOutcomeDoer_OffsetPsyfocus">
+					<offset>0.2</offset>
+				</li>
+				<li Class="IngestionOutcomeDoer_OffsetNeed">
+					<need>Sex</need>
+					<offset>-0.1</offset>
+					<!--<toleranceChemical>Cum</toleranceChemical>-->
+				</li>
+				<!--<li Class="RJWSexperience.Cum.IngestionOutcomeDoer_RecordEatenCum"/>-->
+				<li MayRequire="vegapnk.rjw.genes" Class="Cumpilation.Reactions.IngestionOutcomeDoer_RecordEatenFluid">
+					<fluid>Cum</fluid>
+					<unitAmount>20</unitAmount>
+				</li>
+				<li MayRequire="vegapnk.rjw.genes" Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>rjw_genes_fertilin_lost</hediffDef>
+					<severity>-0.35</severity>
+				</li>
+				<li MayRequire="vegapnk.rjw.genes" Class="RJW_Genes.IngestionOutcomeDoer_LifeForceOffset">
+					<FertilinPerUnit>25</FertilinPerUnit>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+		<!--<comps>
+			<li Class="CompProperties_Drug">
+				<chemical>Cum</chemical>
+				<addictiveness>0.50</addictiveness>
+				<minToleranceToAddict>0.8</minToleranceToAddict>
+				<existingAddictionSeverityOffset>0.5</existingAddictionSeverityOffset>
+				<needLevelOffset>1</needLevelOffset>
+				<listOrder>30</listOrder>
+			</li>
+		</comps>-->
+	</ThingDef>
+
 	<!-- ===== Kibble ===== -->
 	<ThingDef ParentName="RJW_Gastronomy_Base_Meal_Ingredientless">
 		<defName>RJW_Gastronomy_Kibble</defName>
