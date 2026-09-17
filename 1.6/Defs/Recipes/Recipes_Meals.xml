@@ -58,7 +58,7 @@
 
 	<!-- ==================== Canned Cum ==================== -->
 	
-	<RecipeDef ParentName="RJW_Gastronomy_Base_Recipe" MayRequire="rjw.sexperience">
+	<RecipeDef ParentName="RJW_Gastronomy_Base_Recipe" MayRequire="rjw.sexperience,vegapnk.cumpilation">
 		<defName>Make_Canned_Cum</defName>
 		<label>make canned cum</label>
 		<description>Make some canned cum for prolonged storage.</description>
@@ -83,7 +83,7 @@
         </skillRequirements>
 	</RecipeDef>
 	
-	<RecipeDef ParentName="RJW_Gastronomy_Base_Recipe" MayRequire="rjw.sexperience">
+	<RecipeDef ParentName="RJW_Gastronomy_Base_Recipe" MayRequire="rjw.sexperience,vegapnk.cumpilation">
 		<defName>Make_Canned_Cum_Bulk</defName>
 		<label>make canned cum x4</label>
 		<description>Make some canned cum for prolonged storage.</description>
